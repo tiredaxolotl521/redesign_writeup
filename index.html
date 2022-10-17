@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="description" content="Responsive Redesign">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Redesign</h1>
+        <p>CS1300 UI/UX Fall 2022</p>
+    </div>
+    <ul class="nav">
+        <li class="list"><a href="#Usability_Problems">Usability Problems</a></li>
+        <li class="list"><a href="#Visual_Redesign">Visual Redesign</a></li>
+    </ul>
+
+    <div id="Description">
+        <div class="center-box-flex">
+            <div class="center-step-box">
+                    <div class="center-header">
+                        <h2 class="title_white">Overview</h2>
+                    </div>
+                    <p class="yokai-text">The goal of this assignment to practice the workflow of redesigning a simple website. I analyzed and identified flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.
+                    </p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div id="Usability_Problems">
+        <div class="center-box-flex">
+            <div class="center-step-box">
+                    <div class="center-header">
+                        <h2 class="title_white">Part 1: Identifying Usability Problems (arXiv website)</h2>
+                    </div>
+                    <p class="yokai-text">I chose the arXiv website because it is a commonly used website where a lot of researchers use it to post both pre-published and published papers. Because researchers are notorious for being utilitarian, the design and layout of this website lacks a good user interface. Futhermore, this design is the original design that was used in 1980s. Thus, it needs a good makeover. Below are images of the website and the WAVE report.
+                    </p>
+                    <div class="div_center">
+                        <a href="https://arxiv.org/" target="_blank">Click to vist https://arxiv.org/</a>
+                    </div>
+                    
+            </div>
+        </div>       
+        <div>
+            <div class="center">
+                <img id="image" src="images/arXiv.png" alt="">
+                <img id="image" src="images/style.png" alt="">
+            </div>
+        </div>
+    
+        <div class="flex-box">
+            <div class="left-right">
+                <h1 class="left-right-header">Finding Problems</h1>
+                <div class="text-padding">
+                    <ul class="step-text">
+                        <li>Usability</li>
+                        <ul>
+                            <li>Scientific papers are presented in a traditional hierarchy</li>
+                            <li>Have to step through several pages to reach the papers you want (topic → subtopic → year → month → papers)</li>
+                            <li>Lot of pages to sift through before landing on your desired search</li>
+                            <li>Contains a search button hidden in the upper right hand size (very small)</li>
+                            <li>Search button has ablity to serach with various subcategories</li>
+                            <li>Has full directory stack so you can trace back your search</li>
+                            <li>Main display presented you with every topic and subtopic (overwhelming)</li>
+                        </ul>
+                        <li>Learnability</li>
+                        <ul>
+                            <li>Easy transferability of knowledge from searching through folders from a computer</li>
+                            <li>Easy ability to know how to search and build a conceptual model, but difficult execute to find a specific article because there are a lot of filter steps</li>
+                            <li>Low learning curve, hard to master</li>
+                        </ul>
+                        <li>Memorability</li>
+                        <ul>
+                            <li>Three distint colors: maroon red, black and white</li>
+                            <li>Confusing name (good that it gets people to recognize that it hard to pronounce, but bad that no one knows how to stay the website name) </li>
+                            <li>Not intuitive that the X is chi arXiv pronounced archive </li>
+                            <li>Topics laid out in a list are all hyperlinks to another page</li>
+                            <li>Nothing outstanding other than the large red banner on the top and then white page full of hyperlinks</li>
+                            <li>Memorable title logo (yellow smilly face with a cross on a green background)</li>
+                            <li>Basic 1980s website design with minimal frills</li>
+                        </ul>
+                        <li>Conceptual model
+                            <ul>
+                                <li>Viewed as a database to look up scientific papers</li>
+                                <li>The homepage suggests that the best way to look up papers is to have a topic in mind and a time frame of papers you want to search through 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-right">
+                <h1 class="left-right-header">Accessibility</h1>
+                <div class="text-padding">
+                    <ul>
+                        <li class="step-text">There are 3 errors, which consist of an empty link and 2 broken ARIA items. The fact that a link is empty may be misleading and a broken ARIA item prevents web applications from being accessible to people with disabilities. I would have never known of these errors if I did not use WAVE. </li>
+                        <li class="step-text">There are 3 alerts: 1) skipped heading level, 2) a redundant link and a 3) noscript element. These alerts do not impact the user in any major way since they do not alter the way the user interacts with the interface.</li>
+                        <li class="step-text">There are 35 structural elements and 9 features which make for an interesting, yet simple web interface. It has a decent complexity as well as enough simplicity to make the user understand what is going on.</li>
+                        <li class="step-text">There are 244 ARIAs on this single page, 238 of which are ARIA labels. These 238 labels are all displayed to a user all at once. Thus, it can be overwhelming to the user and lead to bad accessibility. </li>
+                        <li class="step-text">There are no contrast errors so the website uses a great color scheme and all the font sizes are accessible. </li>
+                        <li class="step-text">No way to have search results show up based on preference (date, author, mor cited, etc.)</li>
+                        <li class="step-text">No quick way to gather information from results (ie. if you only want to see how many related papers there are, you have to step through severl pages to get there, no quick access button)</li>
+                        <li class="step-text">Hard to know which filters someone is using</li>
+                        <li class="step-text">Lots of text overwhelming the user all at once</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Visual_Redesign">
+        <div class="title">
+            <h1 class="div_bubble">Part 2: Visual Redesign </h1>
+        </div> 
+        <div class="center_div">
+            <div class="center-header">
+                <h2 class="title_white">Lofi designs</h2>
+            </div>
+            <img id="image_2" src="images/desktop.png" alt="">
+            <div class="yokai-header"><p class="center-text">Desktop lofi design</p></div>
+            <img id="image_2" src="images/ipad.png" alt="">
+            <div class="yokai-header"><p class="center-text">Tablet lofi design</p></div>
+            <img id="image_2" src="images/iphone.png" alt="">
+            <div class="yokai-header"><p class="center-text">Phone lofi design</p></div>
+            <img id="image_2" src="images/style_guide.png" alt="">
+            <div class="yokai-header"><p class="center-text">Visual Style guide</p></div>
+            </div>
+        </div>
+        <div class="center_div">
+            <div class="center-header">
+                <h2 class="title_white">Visual Design Style Guide</h2>
+            </div>
+            <img id="image_2" src="images/style_guide.png" alt="">
+            <div class="yokai-header"><p class="center-text">Visual Design Style Guide</p></div>
+            </div>
+        </div>
+        <div class="center_div">
+            <div class="center-header">
+                <h2 class="title_white">High-Fidelity Prototyping</h2>
+            </div>
+            <img id="image_2" src="images/hifi_1.png" alt="">
+            <div class="yokai-header"><p class="center-text">Desktop hifi design</p></div>
+            <img id="image_2" src="images/hifi_2.png" alt="">
+            <div class="yokai-header"><p class="center-text">Tablet hifi design</p></div>
+            <img id="image_2" src="images/hifi_3.png" alt="">
+            <div class="yokai-header"><p class="center-text">Phone hifi design</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
