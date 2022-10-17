@@ -55,7 +55,7 @@ html {
 }
   
 .list a:hover {
-    background-color: #2f578b;
+    background-color: #bb5c5c;
 
 }
 #image {
@@ -215,7 +215,7 @@ html {
 }
 
 .center_div{
-    background-color: #fbfbfb;
+    background-color: #e7e7e7;
     box-shadow:0 10px 16px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0,0,0,0.3);
     border-radius: 10px;
     margin: 5vw;
@@ -232,16 +232,21 @@ html {
     justify-content: center;
     margin: 5vw;
 }
-a:link, a:visited {
-    background-color: #c33737;
+.button_font{
+    font-size: 2rem;
+} 
+
+.div_center a:link, .div_center a:visited {
+    background-color: #3a8b49;
     color: white;
     padding: 2vw 3vw 2vw 3vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
+    box-shadow:0 10px 16px 0 rgba(0, 0, 0, 0.3),0 6px 20px 0 rgba(0,0,0,0.3);
   }
   
-  a:hover, a:active {
-    background-color: #e12020;
+.div_center a:hover, .div_center a:active {
+    background-color: rgb(49, 116, 64);
   }
